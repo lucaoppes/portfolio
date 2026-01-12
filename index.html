@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Luca Oppes</title>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Luca Oppes</h1>
+      <h2>Full-Stack Developer and Web Designer</h2>
+      <p style="font-weight: bold; font-size: 1.2rem">
+        I am Full Stack developer based in Sheffield who is passionate about
+        creating excellent web experiences
+      </p>
+
+      <svg
+        width="34"
+        height="34"
+        viewBox="0 0 24 24"
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.81 2H16.191C19.28 2 21 3.78 21 6.83V17.16C21 20.26 19.28 22 16.191 22H7.81C4.77 22 3 20.26 3 17.16V6.83C3 3.78 4.77 2 7.81 2ZM8.08 6.66V6.65H11.069C11.5 6.65 11.85 7 11.85 7.429C11.85 7.87 11.5 8.22 11.069 8.22H8.08C7.649 8.22 7.3 7.87 7.3 7.44C7.3 7.01 7.649 6.66 8.08 6.66ZM8.08 12.74H15.92C16.35 12.74 16.7 12.39 16.7 11.96C16.7 11.53 16.35 11.179 15.92 11.179H8.08C7.649 11.179 7.3 11.53 7.3 11.96C7.3 12.39 7.649 12.74 8.08 12.74ZM8.08 17.31H15.92C16.319 17.27 16.62 16.929 16.62 16.53C16.62 16.12 16.319 15.78 15.92 15.74H8.08C7.78 15.71 7.49 15.85 7.33 16.11C7.17 16.36 7.17 16.69 7.33 16.95C7.49 17.2 7.78 17.35 8.08 17.31Z"
+        ></path>
+      </svg>
+
+      <h2>Projects:</h2>
+      <section id="projects">
+        <div class="project">
+          <div class="inner">
+            <div class="front">
+              <img src="./192.png" alt="" height="192px" width="192px" />
+              <h2>Finding Swing</h2>
+              <p>A Progressive Web Application for sharing dance events.</p>
+              <div id="buttons"></div>
+            </div>
+            <div class="back">
+              <p>Frontend built using VueJS, Pinia and Vue Router</p>
+              <p>Backend/API built using ExpressJS</p>
+              <p>
+                Login, Search by location, Create and Edit events, Different
+                account types
+              </p>
+              <button>
+                <a href="https://swing-b10d.onrender.com/" target="_blank"
+                  >View Project</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.trunk.min.js"></script>
+<script>
+  VANTA.TRUNK({
+    el: "html",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    backgroundColor: 0x2d2e3e,
+    color: 0xf74972,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    spacing: 5,
+    chaos: 1.5,
+  });
+</script>
