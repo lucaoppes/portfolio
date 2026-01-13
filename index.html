@@ -39,8 +39,10 @@
             <div class="flip-front">
               <img src="./192.png" alt="" height="192px" width="192px" />
               <h2>Finding Swing</h2>
-              <p>A Progressive Web Application for sharing dance events.</p>
-              <div id="buttons"></div>
+              <p>
+                A Progressive Web Application for sharing swing dance events.
+              </p>
+              <p style="margin-top: auto">Click for more information!</p>
             </div>
             <div class="flip-back">
               <p>Frontend built using VueJS, Pinia and Vue Router</p>
@@ -49,10 +51,11 @@
                 Login, Search by location, Create and Edit events, Different
                 account types
               </p>
-              <button>
-                <a href="https://swing-b10d.onrender.com/" target="_blank"
-                  >View Project</a
-                >
+              <button
+                id="view-project"
+                onclick="window.open('https://swing-b10d.onrender.com/')"
+              >
+                View Project
               </button>
             </div>
           </div>
@@ -70,12 +73,10 @@
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 200.0,
-    minWidth: 200.0,
     backgroundColor: 0x2d2e3e,
     color: 0xf74972,
-    scale: 1.0,
-    scaleMobile: 1.0,
+    scale: 1,
+    scaleMobile: 1,
     spacing: 5,
     chaos: 1.5,
   });
