@@ -21,8 +21,8 @@ switch (true) {
     chaos = 1.5;
     break;
   default:
-    spacing = 3;
-    chaos = 1;
+    spacing = 3.5;
+    chaos = 1.25;
 }
 
 const settings = {

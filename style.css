@@ -46,10 +46,6 @@ img {
   transition: transform 0.1s;
 }
 
-.project:hover {
-  transform: scale(1.1);
-}
-
 .flip-card * {
   margin: 0;
 }
@@ -61,6 +57,7 @@ img {
   /* perspective: 1000px; */
   color: black;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .flip-inner {
@@ -134,4 +131,10 @@ img {
 
 #description {
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .project:hover {
+    transform: scale(1.1);
+  }
 }
