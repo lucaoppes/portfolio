@@ -17,7 +17,7 @@ switch (true) {
     chaos = 2;
     break;
   case screenDimensions.h > 1200:
-    spacing = 5;
+    spacing = 6.5;
     chaos = 1.5;
     break;
   default:
@@ -30,12 +30,16 @@ const settings = {
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
-  backgroundColor: 0x2d2e3e,
-  color: 0xf74972,
+  backgroundColor: 0x222426,
+  color: 0xdc0d50,
   scale: 2,
   scaleMobile: 1,
   spacing,
   chaos,
 };
 
-VANTA.TRUNK(settings);
+if (screenDimensions.h > screenDimensions.w) {
+  VANTA.TOPOLOGY(settings);
+} else {
+  VANTA.TRUNK(settings);
+}
