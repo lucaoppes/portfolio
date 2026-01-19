@@ -23,6 +23,8 @@ body {
 
 main {
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #projects {
@@ -61,7 +63,7 @@ img {
 
 .flip-card {
   background-color: transparent;
-  width: 14rem;
+  width: 16rem;
   /* perspective: 1000px; */
   color: black;
   cursor: pointer;
