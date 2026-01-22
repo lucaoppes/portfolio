@@ -1,4 +1,4 @@
-/* MY CSS */
+/* ROOT STYLING */
 * {
   box-sizing: border-box;
 }
@@ -27,17 +27,86 @@ main {
   margin-right: 1rem;
 }
 
+img {
+  align-self: center;
+}
+
+svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* ELEMENT MARGINS */
+#name-heading {
+  margin: 2rem auto 0;
+  font-size: 3rem;
+}
+
+#title-heading {
+  margin: 0 auto 2rem;
+}
+
+#projects-heading {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+#description {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#more-information {
+  margin-top: 2rem;
+  font-weight: bolder;
+  color: #ff8196;
+}
+
+#img-256 {
+  display: none;
+}
+
+/* MAIN STYLES */
 #projects {
   display: flex;
   gap: 1rem;
   justify-content: space-evenly;
 }
 
-img {
-  align-self: center;
+.project {
+  transition: transform 0.25s;
 }
 
-#view-project {
+#contacts {
+  width: 24rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.15rem;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  cursor: pointer;
+  width: 10rem;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #222426;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.contact > p {
+  align-self: center;
+  margin: 0;
+}
+
+#view-project-button {
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
@@ -47,15 +116,12 @@ img {
   margin-top: 2rem;
 }
 
-#view-project:hover {
+#view-project-button:hover {
   background-color: #914854;
   color: white;
 }
 
-.project {
-  transition: transform 0.25s;
-}
-
+/* FLIPPING ANIMATION */
 .flip-card * {
   margin: 0;
 }
@@ -96,73 +162,15 @@ img {
   color: white;
 }
 
-/* Style the back side */
 .flip-back {
   transform: rotateY(180deg);
   text-align: start;
 }
 
-#contacts {
-  width: 24rem;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 1.15rem;
-  gap: 1rem;
-}
-
-.contact {
-  display: flex;
-  cursor: pointer;
-  width: 10rem;
-  justify-content: center;
-  gap: 0.25rem;
-  transition: transform 0.2s;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #222426;
-  padding: 0.5rem;
-  border-radius: 1rem;
-}
-
-.contact > p {
-  align-self: center;
-  margin: 0;
-}
-
-#name-heading {
-  margin: 4rem auto 0;
-  font-size: 3rem;
-}
-
-#title-heading {
-  margin: 0 auto 2rem;
-}
-
-#projects-heading {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-#description {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-#more-information {
-  margin-top: 2rem;
-  font-weight: bolder;
-  color: #ff8196;
-}
-
-#img-256 {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
+/* MEDIA QUERIES */
+@media screen and (min-height: 900px) and (orientation: landscape) {
   :root {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .project:hover {
@@ -183,7 +191,34 @@ img {
   }
 }
 
-svg {
-  margin-top: auto;
-  margin-bottom: auto;
+@media screen and (min-height: 1200px) {
+  :root {
+    font-size: 20px;
+  }
+
+  #name-heading {
+    margin: 4rem auto 0;
+    font-size: 3rem;
+  }
+
+  #title-heading {
+    margin: 0 auto 2rem;
+  }
+
+  #projects-heading {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #description {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  #more-information {
+    margin-top: 2rem;
+    font-weight: bolder;
+    color: #ff8196;
+  }
 }

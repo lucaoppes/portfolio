@@ -17,11 +17,11 @@ switch (true) {
     chaos = 2;
     break;
   case screenDimensions.h > 1200:
-    spacing = 6.5;
+    spacing = 6;
     chaos = 1.5;
     break;
   default:
-    spacing = 3.5;
+    spacing = 3;
     chaos = 1.25;
 }
 
