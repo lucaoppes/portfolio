@@ -2,6 +2,12 @@ function flip(e) {
   e.currentTarget.classList.toggle("click");
 }
 
+function openProject(e, url) {
+  e.stopPropagation();
+
+  window.open(url);
+}
+
 const screenDimensions = {
   w: window.innerWidth,
   h: window.innerHeight,

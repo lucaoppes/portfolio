@@ -153,6 +153,7 @@ svg {
   flex-direction: column;
   gap: 0.5rem;
   color: white;
+  transform: rotateX(0deg);
 }
 
 .flip-back {
